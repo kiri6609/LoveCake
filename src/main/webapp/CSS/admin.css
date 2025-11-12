@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slide-bar {
+  backdrop-filter: blur(15px);
+  background: #150f28db;
+}
+.slide-bar .menu {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+.slide-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+.slide-bar .menu .item p {
+  /* font-size: 15px; */
+  text-decoration: none;
+  display: block;
+  line-height: 25px;
+}
+
+.slide-bar .menu .item a {
+  font-size: 600;
+}
+
+.slide-bar .menu .item p:hover {
+  transition: 0.3s ease;
+}
+/* .slide-bar .menu .item i{
+    margin-right: 0px;
+  } */
+
+.slide-bar .menu .item p .dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+  transition: 0.3s ease;
+  color: black;
+}
+.slide-bar .menu .item .sub-menu {
+  display: none;
+}
+
+.slide-bar .menu .item .sub-menu p {
+  margin-left: 12px;
+}
+.menu p {
+  margin-left: 20px;
+}
+.menu a {
+  color: white;
+}
+.menu i {
+  margin-right: 12px;
+}

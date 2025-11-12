@@ -1,0 +1,297 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 22, 2024, 1:32:16 PM
+    Author     : HP
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+a{
+    color: #3e3e3e;
+    text-decoration: none;
+    transition: 0.15s;
+}
+main{
+    padding: 10px;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.banner .wrapper{
+    width: 97%;
+    height: 100%;
+}
+.control{
+    position: absolute;
+    top: 90%;
+    color: white;
+    cursor: pointer;
+}
+.control.active_control{
+    color: #f4bb14;
+}
+.next{
+    left: 52%;
+}
+.list_img{
+    display: none;
+}
+
+/* CONTENT  */
+.content{
+    margin-top: 30px;
+}
+
+.layout1{
+    height: 600px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.layout1 .layout1_title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 12px;
+    text-transform: uppercase;
+    transition: 0.25s;
+    border-left: 5px solid #ff6223;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.layout1 .layout1_title:hover a{
+    color: #f4bb14;
+}
+.layout1_content{
+    height: calc(94% - 20px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.layout1_content aside{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.layout1_content aside .card_news_bot{
+    position: absolute;
+    top: calc(67% + 3px);
+    left: 0;
+    padding: 10px;
+    height: 170px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.896));
+    color: #fff;
+    padding: 10px 20px;
+}
+.layout1_content aside .card_news_bot a{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    transition: 0s;
+}
+.layout1_content aside .card_news_bot a:hover{
+    color: #f4bb14;
+}
+.layout1_content aside .card_news_bot .other_infor{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    color: #f4bb14;
+    opacity: 0.6;
+}
+.layout1_content aside .card_news_bot .read_more{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #fff;
+}
+.layout1_content aside .card_news_bot .read_more p{
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-work;
+    line-height: 1.5;
+}
+.layout1_content aside .card_news_bot .read_more a{
+    font-size: 13px;
+    color: #ff6223;
+    margin-left: 10px;
+}
+.layout1_content aside .card_news_bot .read_more a:hover{
+    color: #f4bb14;
+}
+
+.layout1_right{
+    width: calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+.layout1_right .right_card{
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.layout1_right .right_card a{
+    width: 30%;
+}
+.layout1_right .right_card .bot_right_card{
+    width: calc(70% - 10px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+.right_card .bot_right_card a{
+    color: #3e3e3e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+}
+.right_card .bot_right_card .card_right_infor span{
+    color: #AAAAAA;
+    font-style: italic;
+    font-size: 14px;
+}
+.right_card .bot_right_card .card_right_read_more{
+    font-size: 14px;
+    color: #3e3e3e;
+    float: left;
+    line-height: 2;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-work;
+} 
+
+/* LAYOUT 2 */
+.layout2{
+    padding: 10px;
+}
+.layout2 .layout2_title{
+    margin: 20px 0;
+    font-size: 12px;
+    color: #3e3e3e;
+    font-weight: 700;
+    border-bottom: solid 2px #ff6223;
+    padding: 15px 15px;
+    height: 40px;
+    padding: 0;
+}
+.layout2 .layout2_title h3{
+    color: #fff;
+    width: 25%;
+    text-transform: uppercase;
+    background-color: #ff6223;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+}
+.layout2 .layout2_title h3::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: -0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 39px 0 0 42px;
+    border-color: #fff #fff #fff #ff6223;
+}
+.layout2 .list_card_news{
+    --spacing: 20px;
+    --columns: 4;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+}
+.list_card_news .card_news{
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: var(--spacing);
+}
+.list_card_news .card_news .other_img{
+    width: 100%;
+    height: 70%;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.256);
+    padding: 15px;
+}
+.list_card_news .card_news .other_img:hover{
+    box-shadow: -1px 1px 15px rgba(0, 0, 0, 0.7);
+}
+.card_news .card_news_bot{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+.card_news .card_news_bot a{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: 0.2s;
+}
+.card_news .card_news_bot a:hover{
+    color: #f4bb14;
+}
+.card_news .card_news_bot .other_infor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 10px;
+    color: #3e3d3e;
+    opacity: 0.5;
+}

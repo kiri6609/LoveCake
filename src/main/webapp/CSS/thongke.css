@@ -1,0 +1,195 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 2, 2024, 11:20:18 PM
+    Author     : Vu Minh Uyen
+*/
+
+
+/*NAM CODE*/
+
+.statistic{
+    --spacing: 20px;
+    --column: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+}
+.statistic .sta-item{
+    width: calc(calc(100% / var(--column)) - var(--spacing));
+    margin-left: var(--spacing);
+    height: 130px;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.sta-item .top-statistic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+}
+.sta-item .top-statistic .statistic-icon{
+    background: linear-gradient(to bottom right, var(--secondcolor), #f01919);
+    padding: 30px 32px;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #fff;
+    font-size: 18px;
+}
+.sta-item .top-statistic .statistic-infor{
+    padding-right: 20px;
+    padding-top: 5px;
+}
+.sta-item .top-statistic .statistic-infor h4{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #3e3e3e84;
+}
+.sta-item .top-statistic .statistic-infor span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3e3e3e;
+}
+.sta-item .bot-statistic{
+    height: calc(30% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.sta-item .bot-statistic a{
+    color: #f4bb14;
+}
+.sta-item .bot-statistic a i{
+    color: #f01919;
+}
+
+/*END NAM CODE*/
+.frame {
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        button {
+            margin: 20px;
+        }
+        .custom-btn {
+            width: 130px;
+            height: 40px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 25px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+            outline: none;
+        }
+        .btn-5 {
+            width: 130px;
+            height: 40px;
+            line-height: 42px;
+            padding: 0;
+            border: none;
+            background: rgb(255,27,0);
+            background: linear-gradient(0deg, rgb(34 119 228) 0%, rgb(255 255 255) 100%);
+        }
+        .btn-5:hover {
+            color: #f0094a;
+            background: transparent;
+            box-shadow:none;
+        }
+        .btn-5:before,
+        .btn-5:after{
+            content:'';
+            position:absolute;
+            top:0;
+            right:0;
+            height:2px;
+            width:0;
+            background: #f0094a;
+            box-shadow:
+                -1px -1px 5px 0px #fff,
+                7px 7px 20px 0px #0003,
+                4px 4px 5px 0px #0002;
+            transition:400ms ease all;
+        }
+        .btn-5:after{
+            right:inherit;
+            top:inherit;
+            left:0;
+            bottom:0;
+        }
+        .btn-5:hover:before,
+        .btn-5:hover:after{
+            width:100%;
+            transition:800ms ease all;
+        }
+
+        .bieudo{
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            color:#ff6600;
+            transition: color 0.3s;
+        }
+        .bieudo:hover {
+            color:  #3333ff;
+        }
+        .col-lg-4 {
+            margin-top: 20px;
+        }
+
+        .khung {
+            width: 100%;
+        }
+
+/*        .continuous-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ffffff;  Màu của khung 
+            position: relative;*/
+            /*animation: spin 2s linear infinite;  Sử dụng animation và chỉ định tên và thời gian */
+        /*}*/
+
+/*        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }*/
+
+
+        .txtretroshadow {
+            text-align: center;
+            font-size: 50px;
+            color: #2c2c2c;
+            /*background-color: #d5d5d5;*/
+            letter-spacing: .05em;
+            text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+            height: 80px;
+            padding-top: 10px;
+        }
+
+
+        .txtretroshadow:hover{
+            color: #6666ff;
+        }

@@ -1,0 +1,19 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 16, 2024, 8:25:39 PM
+    Author     : PC
+*/
+.social-icon{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+}
+
+a{
+    color: #3e3e3e;
+    text-decoration: none;
+    transition: 0.15s;
+}
